@@ -13,7 +13,6 @@ void display(void);
 int main()
 {
     int choice;
-    clrscr();
     do{
         printf("\n1.Insert at right ");
         printf("\n2.Insert at left ");
@@ -44,8 +43,6 @@ int main()
     getch();
     return 0;
 }
-
-
 //-------INSERT AT RIGHT-------
 void insert_right()
 {
@@ -67,8 +64,6 @@ void insert_right()
     }
     deque[right]=val;
 }
-
-
 //-------INSERT AT LEFT-------
 void insert_left()
 {
@@ -90,8 +85,6 @@ void insert_left()
     }
     deque[left]=val;
 }
-
-
 //-------DELETE FROM RIGHT-------
 void delete_right()
 {
@@ -111,8 +104,6 @@ void delete_right()
             right=right-1;
     }
 }
-
-
 //-------DELETE FROM LEFT-------
 void delete_left()
 {
@@ -129,11 +120,9 @@ void delete_left()
         if(left==MAX-1)
             left=0;
         else
-        left=left+1;
+            left=left+1;
     }
 }
-
-
 //-------DISPLAY-------
 void display()
 {
