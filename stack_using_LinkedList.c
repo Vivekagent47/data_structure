@@ -1,6 +1,7 @@
 /* A basic Stack implementation in C using linkedlist, with the following functionalities implemented:
 	-Push operation 
 	-Pop operation
+	-Display stack
 */
 
 #include<stdio.h>
@@ -36,6 +37,8 @@ int pop(node **top){
 	free(temp);                         // Free up the memory
 	return data;
 }
+
+//Display Stack
 void displayStack(node *head){
 	node *temp = head;
 	if(temp){
