@@ -6,12 +6,12 @@ struct node{
 	struct node *next;
 };
 struct node *insertNodeEnd(struct node*, int);
-struct node *insertNodeBeg(struct node *, int);
+struct node *insertNodeBeg(struct node*, int);
 struct node *insertAfter(struct node*, int,int);
 struct node *deleteNode(struct node*, int);
 struct node *reverseList(struct node *head);
 void displayList(struct node*);
-void deleteList(struct node *);
+void deleteList(struct node*);
 
 int main(){
 	struct node* head = NULL; //HEADER FOR LIST
