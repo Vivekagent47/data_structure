@@ -23,6 +23,7 @@ class LinkedList:
         
     def insertNodeEnd(self, data):
         node = Node(data)
+        
         if self.head == None:
             self.head = node
         else:
@@ -33,6 +34,7 @@ class LinkedList:
     
     def printList(self):
         temp = self.head
+
         if self.head == None:
             print("Empty List")
         else:
@@ -51,6 +53,7 @@ class LinkedList:
             self.head = temp.next
             temp = None
             return
+
         while temp is not None:
             if temp.data == data:
                 break
@@ -76,6 +79,7 @@ if __name__ == "__main__":
         print("\n")
         i = int(input())
         print("\n")
+
         if i == 1:
             lst.insertNodeBeg(input("Enter data you want to insert: "))
         elif i == 2:
@@ -86,5 +90,4 @@ if __name__ == "__main__":
             lst.printList()
         elif i == 5:
             break
-        
         
