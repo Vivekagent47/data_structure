@@ -1,3 +1,10 @@
+''' A basic Stack implementation in Python using array, 
+    with the following functionalities implemented:
+	-Push operation 
+	-Pop operation
+	-Display stack
+'''
+
 class Stack:
     def __init__(self):
         self.stack = list()
