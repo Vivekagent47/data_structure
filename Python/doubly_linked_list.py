@@ -1,3 +1,12 @@
+'''
+In this program wi impliment the Doubly LinkedList 
+here we can do 4 differnt operations:
+    1- Insert Node at Beginning
+    2- Insert Node at End
+    3- Delete the node you want
+    4- Print List
+'''
+
 class Node:
     def __init__(self, data, next = None, previous = None):
         self.data = data
